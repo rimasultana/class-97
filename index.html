@@ -6,11 +6,11 @@
 <script>
 
 const para = document.createElement("p");
-const node = document.createTextNode("This is a new ");
+const node = document.createTextNode("This is a new");
 para.appendChild(node);
 
 const element = document.getElementById("div1");
-element.appendChild(para);
-
+const child = document.getElementById("p1");
+element.insertBefore(para, child);
 
 </script>
